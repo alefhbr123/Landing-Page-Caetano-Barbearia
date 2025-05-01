@@ -14,6 +14,24 @@ setInterval(() => {
   ativo = !ativo;
 }, 6000);
 
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target); // só anima uma vez
+      }
+    });
+  }, {
+    threshold: 0.2 // dispara quando 20% do elemento estiver visível
+  });
+
+  document.querySelectorAll('.animate')
+    .forEach(el => observer.observe(el));
+});
+
+  
+  
 
   
   
