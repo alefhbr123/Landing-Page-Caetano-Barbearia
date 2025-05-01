@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   background-color: #111;
   color: #fff;
 }
@@ -137,6 +137,10 @@ body {
   text-align: center;
   padding: 20px;
   color: white;
+}
+
+.overlay-content p a{
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
 }
 
 .hero-logo {
@@ -276,6 +280,10 @@ footer {
   flex-wrap: wrap;
 }
 
+.sobre-container h2 p{
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
 .sobre-img {
   flex: 1;
   max-width: 400px;
@@ -318,6 +326,7 @@ footer {
 .galeria-container h2 {
   color: #d4af37;
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 .galeria-container p {
@@ -434,6 +443,7 @@ footer {
   min-width: 300px;
   max-width: 600px;
 }
+
 .footer-container {
   position: relative;
   background: url('IMG_4346.jpeg') no-repeat center center/cover;
@@ -490,6 +500,7 @@ footer {
   color: #d4af37;
 }
 
+
 .footer-instagram img {
   width: 20px;
   margin-bottom: 10px;
@@ -529,12 +540,21 @@ html {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+
 .whatsapp-float img {
   width: 32px;
   height: 40px;
 }
 
+/* estado inicial: invisível e deslocado para baixo */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-
-
-
+/* quando a classe “visible” for adicionada, ele sobe e aparece */
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
