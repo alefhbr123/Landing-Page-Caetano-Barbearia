@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #111;
   color: #fff;
 }
@@ -140,7 +140,7 @@ body {
 }
 
 .overlay-content p a{
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-family: 'Alfa Slab One', serif;
 }
 
 .hero-logo {
@@ -626,3 +626,6 @@ html {
     gap: 20px;
   }
 }
+
+
+
