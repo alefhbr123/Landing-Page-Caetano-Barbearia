@@ -13,9 +13,9 @@ body {
 .dia-horario {
   display: flex;
   flex-direction: column;
-  align-items: center;    /* centraliza Seg e o span abaixo */
-  margin: 0 1rem;         /* opcional: espaçamento lateral */
-  text-align: center;     /* garante texto centralizado */
+  align-items: center;    
+  margin: 0 1rem;        
+  text-align: center;     
 }
 
 .material-symbols-outlined {
@@ -23,14 +23,13 @@ body {
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
-    'opsz' 48;    /* tamanho da ‘grade’ de design interna */
+    'opsz' 48;  
 }
 
-/* agora personalizamos o tamanho do ícone específico */
 .icon-schedule {
-  font-size: 48px;        /* ou 2.5rem, 3rem… vá testando */
-  line-height: 1;         /* evita desalinhamento vertical */
-  display: inline-block;  /* reforça que respeite o font-size */
+  font-size: 48px;       
+  line-height: 1;        
+  display: inline-block;  
 }
 
 
@@ -546,20 +545,17 @@ html {
   height: 40px;
 }
 
-/* estado inicial: invisível e deslocado para baixo */
 .animate {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* quando a classe “visible” for adicionada, ele sobe e aparece */
 .animate.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* === RESPONSIVIDADE GERAL === */
 @media (max-width: 1024px) {
   .sobre-container,
   .localizacao-container {
@@ -573,7 +569,6 @@ html {
   }
 }
 
-/* === SOBE NÓS: IMAGEM + TEXTO === */
 @media (max-width: 768px) {
   .sobre-container {
     padding: 30px 15px;
@@ -593,7 +588,6 @@ html {
   }
 }
 
-/* === LOCALIZAÇÃO: MAPA === */
 @media (max-width: 768px) {
   .localizacao-container {
     padding: 30px 15px;
@@ -605,11 +599,10 @@ html {
   }
   .local-mapa iframe {
     width: 100%;
-    height: 250px;    /* pode ajustar a altura conforme preferir */
+    height: 250px;   
   }
 }
 
-/* === AJUSTES DE TIPOGRAFIA EM CELULARES === */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.8rem;
