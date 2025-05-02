@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        obs.unobserve(entry.target); // só anima uma vez
+        obs.unobserve(entry.target); 
       }
     });
   }, {
-    threshold: 0.2 // dispara quando 20% do elemento estiver visível
+    threshold: 0.2 
   });
 
   document.querySelectorAll('.animate')
