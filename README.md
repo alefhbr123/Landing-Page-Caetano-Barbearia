@@ -16,3 +16,20 @@ Consiste numa Landing Page para a barbearia Caetano Barbearia.
 - Botão flutuante de WhatsApp  
 - Footer com logo e links  
 
+## 🏗Estrutura do projeto
+```text
+├── IMG_3747.jpeg
+├── IMG_4346.jpeg
+├── IMG_4357.jpeg
+├── README.md
+├── caetano-logo.png
+├── foto1.jpg
+├── foto2.jpeg
+├── foto3.jpeg
+├── foto4.jpeg
+├── foto5.jpeg
+├── foto6.jpeg
+├── index.html
+├── script.js
+└── style.css
+```
